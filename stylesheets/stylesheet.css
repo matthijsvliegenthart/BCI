@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sans Pro', sans-serif ;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+input[type='text']{
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+button{
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.header{
+    height: 100px;
+    background: #000;
+}
+
+.header-menu{
+
+}
+
+.header-menu li{
+    color: #fff;
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-menu li:hover{
+    color: #000;
+    background: #fff;
+}
+
+.footer{
+    height: 100px;
+    background: #000;
+}
+
+/*LOGIN*/
+
+.login{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 99;
+    /*display: none;*/
+}
+
+.login-content{
+    width: 300px;
+    margin: 100px auto 0;
+    background-color: #fff;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login-content input[type='text']{
+    width: calc(100% - 20px);
+    margin-top: 20px;
+}
+
+.login-content button{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login-content select{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*MAIN*/
+.main-container{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+}
+
+.chat-main{
+    padding: 50px 0;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.chat{
+    width: 60%;
+    float: left;
+}
+
+#chat-output{
+    width: calc(100% - 10px);
+    height: 500px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#chat-output p{
+    margin-bottom: 2px;
+}
+
+#chat-input{
+    margin-top: 20px;
+    width: calc(100% - 10px);
+}
+
+.chat-users{
+    width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    float: right;
+}
+
+.chat-users .user{
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.chat-users .user:first-child{
+    border: none;
+}
+
+.create-route-main{
+    z-index: 0;
+}
+
+.create-route-options{
+    position: absolute;
+    z-index: 50;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: none;
+}
+
+.create-route-option{
+    padding: 10px 10px 10px 50px;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.create-route-option:first-child{
+    border-top: none;
+}
+
+
+#create-route-canvas{
+    width: 100%;
+    height: 500px;
+}
+
+.map-main{
+    z-index: 0;
+}
+
+#map-canvas{
+    height: 500px;
+    width: 100%;
+}
